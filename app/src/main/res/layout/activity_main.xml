@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/linear_layout_shape"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageButton
+               android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Home"
+                android:textColor="#6A6A6A"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/ibWishlist"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/ic_wishlist" />
+
+                <TextView
+                    android:id="@+id/badge_notification_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/ibWishlist"
+                    android:background="@android:drawable/ic_notification_overlay"
+                    android:text="19"
+                    android:textColor="#FFF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Wishlist"
+                android:textColor="#6A6A6A"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageButton
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:src="@drawable/ic_campaigns" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Campaigns"
+                android:textColor="#6A6A6A"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageButton
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:src="@drawable/ic_cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Cart"
+                android:textColor="#6A6A6A"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageButton
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:src="@drawable/ic_account"
+                app:tint="#BF2028" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Account"
+                android:textColor="#6A6A6A"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="187dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibBackButton"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="OTP Verification"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="A verification code has been sent to your \nnumber. Please enter that to access the Refund \nSettlement"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <com.chaos.view.PinView
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:itemBackground="#F2F3F5"
+        app:cursorColor="@color/black"
+        app:itemCount="5"
+        app:itemHeight="50dp"
+        app:itemWidth="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/ibBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
